@@ -1,0 +1,3 @@
+<div *ngFor="let toDo of toDos">
+    <p [ngClass]="{ completed: !toDo.completed }">{{ toDo.title }}</p>
+</div>
