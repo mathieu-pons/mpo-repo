@@ -1,0 +1,8 @@
+<div class="row hover " (click)="recoveredTodo(todo)" *ngFor="let todo of mytodos; let i = index">
+    <div class="col-7 div-title">
+        <p [ngClass]="{ completed: todo.completed }">{{ todo.title }}</p>
+    </div>
+    <div class="col-1">
+        <mat-checkbox (change)="updateTodoCompleted(todo, i)" [(ngModel)]="completedArray[i]"></mat-checkbox>
+    </div>
+</div>
