@@ -41,7 +41,6 @@ export class HomeComponent implements OnInit {
         this.State$.subscribe(res => {
             if (res) {
                 this.state = Object.values(res);
-                console.log(this.state);
             }
         });
     }
